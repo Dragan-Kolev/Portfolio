@@ -1,0 +1,26 @@
+header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 150px;
+  background: linear-gradient(45deg, #999 5%, #fff 10%, #ccc 30%, #ddd 50%, #ccc 70%, #fff 80%, #999 95%);
+}
+header .navigation {
+  width: 500px;
+  height: auto;
+  margin: auto;
+  align-self: center;
+  color: black;
+}
+header .navigation .navItems {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+header .navigation .navItems .navItem {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=header.css.map */
