@@ -7,10 +7,12 @@ footer {
   border-top: 5px solid blue;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
-
+  box-shadow: 0 0 40px 10px blue;
+  margin: auto;
   .footerNav {
-    width: 350px;
+    width: 100%;
     align-self: center;
+    
 
     ul { 
       display: flex;

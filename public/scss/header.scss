@@ -7,9 +7,11 @@ header {
   border-bottom: 5px solid blue;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
+  box-shadow: 0 0 30px 10px blue;
+  margin: auto;
 
   .navigation {
-    width: 350px;
+    width: 100%;
     align-self: center;
 
     .navItems {
@@ -21,8 +23,12 @@ header {
       .navItem {
         text-decoration: none;
         color: silver;
-        font-size: 20px;
+        font-size: 25px;
         font-weight: bold;
+      }
+
+      .navItem:hover {
+        color: blue;
       }
     }
   }
