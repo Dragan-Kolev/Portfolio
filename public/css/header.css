@@ -3,14 +3,14 @@ header {
   flex-direction: row;
   width: 100%;
   height: 150px;
-  background: linear-gradient(45deg, #999 5%, #fff 10%, #ccc 30%, #ddd 50%, #ccc 70%, #fff 80%, #999 95%);
+  background: black;
+  border-bottom: 5px solid blue;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 header .navigation {
-  width: 500px;
-  height: auto;
-  margin: auto;
+  width: 350px;
   align-self: center;
-  color: black;
 }
 header .navigation .navItems {
   list-style: none;
@@ -19,6 +19,8 @@ header .navigation .navItems {
   justify-content: space-evenly;
 }
 header .navigation .navItems .navItem {
+  text-decoration: none;
+  color: silver;
   font-size: 20px;
   font-weight: bold;
 }
