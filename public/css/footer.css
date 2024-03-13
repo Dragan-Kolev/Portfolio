@@ -19,12 +19,16 @@ footer .footerNav ul {
   list-style: none;
   flex-direction: row;
   justify-content: space-evenly;
+  justify-self: center;
 }
 footer .footerNav ul .listItem {
   text-decoration: none;
   color: silver;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: bold;
+}
+footer .footerNav ul .listItem:hover {
+  color: blue;
 }
 
 /*# sourceMappingURL=footer.css.map */

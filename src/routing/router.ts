@@ -5,4 +5,6 @@ const appController = require('../controllers/appController');
 
 router.get('/', appController.getHome);
 
+router.get('/portfolio', appController.getPortfolio);
+
 module.exports = router;

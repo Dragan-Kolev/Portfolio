@@ -53,10 +53,16 @@ body .text {
   body .main-container {
     margin: 40px 30px;
   }
+  body .svg-container {
+    height: 100px;
+  }
 }
 @media screen and (min-width: 768px) {
   body .main-container {
     margin: 40px 120px;
+  }
+  body .svg-container {
+    height: 100px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -96,7 +102,7 @@ body .text {
     margin: 40px 600px;
   }
   body .svg-container {
-    height: 120px;
+    height: 130px;
   }
 }
 

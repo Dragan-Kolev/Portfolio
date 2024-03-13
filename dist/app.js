@@ -14,7 +14,7 @@ app.use(body_parser.json());
 app.use(body_parser.urlencoded({ extended: true }));
 app.use(express_1.default.static(path_1.default.join(__dirname, '../public')));
 app.set('view engine', 'ejs');
-app.set('views', 'views');
+app.set('views', './src/views');
 app.use(router);
 app.listen(port, () => {
     console.log(`Server is running on port: ${port}`);

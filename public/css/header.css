@@ -19,6 +19,7 @@ header .navigation .navItems {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  justify-self: center;
 }
 header .navigation .navItems .navItem {
   text-decoration: none;

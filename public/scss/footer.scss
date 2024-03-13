@@ -12,19 +12,23 @@ footer {
   .footerNav {
     width: 100%;
     align-self: center;
-    
-
+  
     ul { 
       display: flex;
       list-style: none;
       flex-direction: row;
       justify-content: space-evenly;
+      justify-self: center;
 
       .listItem {
         text-decoration: none;
         color: silver;
-        font-size: 20px;
+        font-size: 22px;
         font-weight: bold;
+      }
+
+      .listItem:hover {
+        color: blue;
       }
     }
   }

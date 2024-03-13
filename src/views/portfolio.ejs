@@ -1,0 +1,33 @@
+<%- include('./includes/head.ejs') %>
+<link rel="stylesheet" href="/css/portfolio.css">
+<link rel="stylesheet" href="/css/portfolio.css.map">
+</head>
+<body>
+  <%-include('./includes/navigation.ejs') %>
+  <main class="main-container">
+    <h1 class="main-heading">Portfolio</h1>
+    <div class="card-container">
+      <div class="portfolio-card">
+        <h2 class="project-heading">Alenavita</h2>
+        <a href="https://alenavita.com" class="portLink">-> Alenavita Store</a>
+        <p>An e-commerce store focused on bio-cosmetics. The client wanted the option of editing products and maintaining the store herself,
+          so it was built using a CMS.
+        </p>
+        <p>Technologies used: Shopware 5, CSS, Twig, JavaScript</p>
+      </div>
+      <div class="portfolio-card">
+        <h2 class="project-heading">EN Fitness</h2>
+        <a href="https://ekaterinanachevafitness.com" class="portLink">-> EN Fitness WebSite</a>
+        <p>An advertising website for a fitness coaching service. The client wanted a custom design, fast loading speeds and good SEO performance, so I built it from scratch.</p>
+        <p>Technologies used: EJS, CSS, NodeJS, JavaScript</p>
+      </div>
+      <div class="portfolio-card">
+        <h2 class="project-heading">MQL5 Expert Advisors</h2>
+        <a href="https://www.mql5.com/en/market/product/114094?source=Site+Market+MT5+Expert+Rating006" class="portLink">-> Momentum Averages EA</a>
+        <p>I have made multiple Expert Advisors. Due to them being licensed and currently in use by my clients, I am not authorized to link to them. I will provide a link to one that I am selling currently on the official MQL5 market.</p>
+        <p>Technologies used: MetaTrader 5, MQL5</p>
+      </div>
+    </div>
+  </main>
+  <%-include('./includes/foot.ejs') %>
+</body>

@@ -7,6 +7,14 @@ const getHome = (req: Request, res: Response, next: NextFunction) => {
   });
 }
 
+const getPortfolio = (req: Request, res: Response, next: NextFunction) => {
+  res.render('portfolio', {
+    path: '/portfolio',
+    pageTitle: 'Portfolio'
+  });
+}
+
 module.exports = {
-  getHome
+  getHome,
+  getPortfolio
 }

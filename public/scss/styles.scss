@@ -58,11 +58,19 @@ body {
     .main-container {
       margin: 40px 30px;
     }
+
+    .svg-container {
+      height: 100px;
+    }
   }
 
   @media screen and (min-width: 768px) {
     .main-container {
       margin: 40px 120px;
+    }
+
+    .svg-container {
+      height: 100px;
     }
   }
 
@@ -112,7 +120,7 @@ body {
     }
 
     .svg-container {
-      height: 120px;
+      height: 130px;
     }
   }
 }

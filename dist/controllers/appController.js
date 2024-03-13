@@ -6,6 +6,13 @@ const getHome = (req, res, next) => {
         pageTitle: 'PortfolioTest'
     });
 };
+const getPortfolio = (req, res, next) => {
+    res.render('portfolio', {
+        path: '/portfolio',
+        pageTitle: 'Portfolio'
+    });
+};
 module.exports = {
-    getHome
+    getHome,
+    getPortfolio
 };
