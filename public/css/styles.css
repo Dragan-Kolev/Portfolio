@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: black;
+  color: silver;
+  font-family: "Spectral", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body .svg-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 80px;
+}
+body svg polygon {
+  stroke: blue;
+  stroke-width: 2;
+  animation: glow 20s infinite;
+}
+@keyframes glow {
+  0%, 100% {
+    stroke-width: 2;
+  }
+  25% {
+    stroke-width: 4;
+    stroke: royalblue;
+  }
+  50% {
+    stroke-width: 6;
+    stroke: darkblue;
+  }
+  75% {
+    stroke-width: 4;
+    stroke: royalblue;
+  }
+}
+body .main-container {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 10px;
+}
+body .main-heading {
+  text-align: center;
+  font-size: 45px;
+  line-height: 45px;
+}
+body .text {
+  text-align: center;
+  font-size: 25px;
+}
+@media screen and (min-width: 576px) {
+  body .main-container {
+    margin: 40px 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  body .main-container {
+    margin: 40px 120px;
+  }
+}
+@media screen and (min-width: 992px) {
+  body .main-container {
+    margin: 40px 160px;
+  }
+  body .svg-container {
+    height: 120px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  body .main-container {
+    margin: 40px 260px;
+  }
+  body .svg-container {
+    height: 120px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  body .main-container {
+    margin: 40px 400px;
+  }
+  body .svg-container {
+    height: 120px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  body .main-container {
+    margin: 40px 500px;
+  }
+  body .svg-container {
+    height: 120px;
+  }
+}
+@media screen and (min-width: 1900px) {
+  body .main-container {
+    margin: 40px 600px;
+  }
+  body .svg-container {
+    height: 120px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

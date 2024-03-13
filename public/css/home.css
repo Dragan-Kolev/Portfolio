@@ -1,0 +1,19 @@
+.portButton {
+  align-self: center;
+  width: 80px;
+  height: 20px;
+  padding: 10px 5px;
+  background: linear-gradient(45deg, #999 5%, #fff 10%, #ccc 30%, #ddd 50%, #ccc 70%, #fff 80%, #999 95%);
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  border-radius: 10px;
+  box-shadow: 2px 2px 30px 5px blue;
+}
+
+.portButton:hover {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=home.css.map */

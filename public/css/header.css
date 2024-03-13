@@ -1,0 +1,33 @@
+header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 150px;
+  background: black;
+  border-bottom: 5px solid blue;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  box-shadow: 0 0 30px 10px blue;
+  margin: auto;
+}
+header .navigation {
+  width: 100%;
+  align-self: center;
+}
+header .navigation .navItems {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+header .navigation .navItems .navItem {
+  text-decoration: none;
+  color: silver;
+  font-size: 25px;
+  font-weight: bold;
+}
+header .navigation .navItems .navItem:hover {
+  color: blue;
+}
+
+/*# sourceMappingURL=header.css.map */
