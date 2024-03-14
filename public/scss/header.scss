@@ -26,10 +26,11 @@ header {
         color: silver;
         font-size: 25px;
         font-weight: bold;
+        border-radius: 10px;
       }
 
       .navItem:hover {
-        color: blue;
+        box-shadow: 4px 4px 20px 6px blue;
       }
     }
   }

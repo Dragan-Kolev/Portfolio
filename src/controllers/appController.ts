@@ -14,7 +14,15 @@ const getPortfolio = (req: Request, res: Response, next: NextFunction) => {
   });
 }
 
+const getContact = (req: Request, res: Response, next: NextFunction) => {
+  res.render('contact', {
+    path: '/contact',
+    pageTitle: 'Contact Me'
+  });
+}
+
 module.exports = {
   getHome,
-  getPortfolio
+  getPortfolio,
+  getContact
 }

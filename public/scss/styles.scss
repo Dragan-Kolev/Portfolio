@@ -7,6 +7,28 @@ body {
   font-weight: 400;
   font-style: normal;
 
+  .btn {
+    align-self: center;
+    text-decoration: none;
+    text-align: center;
+    font-size: 22px;
+    background: linear-gradient(45deg,
+    #999 5%,
+    #fff 10%,
+    #ccc 30%,
+    #ddd 50%,
+    #ccc 70%,
+    #fff 80%,
+    #999 95%);
+    height: 30px;
+    width: 100px;
+    font-weight: bold;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 30px 5px blue;
+    padding: 0 10px;
+  }
+
   .svg-container {
     display: flex;
     flex-direction: row;

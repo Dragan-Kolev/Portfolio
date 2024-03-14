@@ -7,4 +7,6 @@ router.get('/', appController.getHome);
 
 router.get('/portfolio', appController.getPortfolio);
 
+router.get('/contact', appController.getContact);
+
 module.exports = router;

@@ -28,7 +28,7 @@ footer .footerNav ul .listItem {
   font-weight: bold;
 }
 footer .footerNav ul .listItem:hover {
-  color: blue;
+  box-shadow: 4px 4px 20px 6px blue;
 }
 
 /*# sourceMappingURL=footer.css.map */
