@@ -10,8 +10,10 @@
   padding: 20px;
   margin: 20px 0;
 }
-.contact-form a {
-  margin: 20px 0;
+.contact-form button {
+  margin: 25px 0;
+  width: 120px;
+  height: 40px;
 }
 .contact-form label {
   font-size: 18px;
@@ -25,6 +27,11 @@
 .contact-form textarea {
   border-radius: 10px;
   height: 120px;
+}
+.contact-form .user-message__error {
+  color: red;
+  font-size: 18px;
+  margin: 5px 0;
 }
 @media screen and (min-width: 576px) {
   .contact-form label {

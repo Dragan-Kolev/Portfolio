@@ -19,7 +19,8 @@ header {
       display: flex;
       flex-direction: row;
       justify-content: space-evenly;
-      justify-self: center;
+      column-gap: 16px;
+      padding: 0 12px;
 
       .navItem {
         text-decoration: none;

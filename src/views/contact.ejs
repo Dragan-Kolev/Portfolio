@@ -23,14 +23,17 @@
         <polygon points="50,1 95,25 95,75 50,99 5,75 5,25" fill="transparent" stroke="none"/>
       </svg>
     </div>
-    <form class="contact-form">
+    <form class="contact-form" action="/contact" method="POST">
+      <div class="user-message__error"><%= validationErrors.find(e => e.path === 'name') ? 'Please enter your name' : '' %></div>
       <label for="name">Name</label>
-      <input type="text">
+      <input type="text" name="name" value="<% if (hasError) { %><%= name %><% } %>">
+      <div class="user-message__error"><%= validationErrors.find(e => e.path === 'email') ? 'Please enter a valid email' : '' %></div>
       <label for="email">E-mail</label>
-      <input type="text">
+      <input type="text" name="email" value="<% if (hasError) { %><%= email %><% } %>">
+      <div class="user-message__error"><%= validationErrors.find(e => e.path === 'message') ? 'Please enter a message between 20 and 1000 characters' : '' %></div>
       <label for="message">Message</label>
-      <textarea name="message" cols="30" rows="10"></textarea>
-      <a class="btn" href="/message">Send</a>
+      <textarea name="message" cols="30" rows="10" value="<% if (hasError) { %><%= message %><% } %>"></textarea>
+      <button class="btn" type="submit">Send</button>
     </form>
     <div class="svg-container">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
