@@ -58,7 +58,17 @@ const postContact = (req: Request, res: Response, next: NextFunction) => {
     })
   }
 
-    res.redirect('/');
+  transport.sendMail({
+    to: 'drahmull@gmail.com',
+    from: name,
+    subject: 'Message',
+    html: `<h1> Message </h1>
+           <p>From: ${name}</p>
+           <p>Email: ${email}</p>
+           <p>Message: ${message}</p>`
+  });
+
+  res.redirect('/');
 
   
 }

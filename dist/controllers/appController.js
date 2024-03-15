@@ -3,11 +3,11 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const nodemailer = require('nodemailer');
 const { validationResult } = require('express-validator');
 const transport = nodemailer.createTransport({
-    host: "test.smtp.mailtrap.io",
-    port: 699,
+    host: "sandbox.smtp.mailtrap.io",
+    port: 2525,
     auth: {
-        user: "",
-        pass: ""
+        user: "25c0c2c95346f6",
+        pass: "4938b855f5c9e8"
     }
 });
 const getHome = (req, res, next) => {
@@ -49,10 +49,16 @@ const postContact = (req, res, next) => {
             validationErrors: errors.array()
         });
     }
-    alert("Thank you for sending a message, you will be redirected to the homepage in 5 seconds.");
-    setTimeout(() => {
-        res.redirect('/');
-    }, 5000);
+    transport.sendMail({
+        to: 'drahmull@gmail.com',
+        from: name,
+        subject: 'Message',
+        html: `<h1> Message </h1>
+           <p>From: ${name}</p>
+           <p>Email: ${email}</p>
+           <p>Message: ${message}</p>`
+    });
+    res.redirect('/');
 };
 module.exports = {
     getHome,
